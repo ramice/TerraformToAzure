@@ -1,6 +1,8 @@
-# TF file that deploys 	Standard_B1s (free tier) VM with Ubunty 19.4 together with SSH Key authentication line 53 and 54
+# TF file that deploys 	Standard_B1s (free tier) VM with Ubunty 19.4 together with SSH Key authentication line 56. Don’t forget to generate and place SSL
+# certificate to your local machine  (on Windows is should be here C:\Users\YourUsername\.ssh )
 # Port 22 is open for SSH via public IP (dynamic public ip)
 # Zone is Europe West
+# main.tf file can be run from terraform directory (for sake of simplicity) assuming that terraform installation, AzureCli and you are authenticated to your Azure
 # Emir Ramic, eramic@hotmail.com
 
 provider "azurerm" {
