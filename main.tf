@@ -5,10 +5,12 @@
 # main.tf file can be run from terraform directory (for sake of simplicity) assuming that terraform installation, AzureCli and you are authenticated to your Azure
 # Emir Ramic, eramic@hotmail.com
 
+#Configure Provider (AWS, Azure....)
 provider "azurerm" {
   features {}
 }
 
+#Creation of resources
 resource "azurerm_resource_group" "ubuntu" {
   name     = "emirdemo-resources"
   location = "westeurope"
